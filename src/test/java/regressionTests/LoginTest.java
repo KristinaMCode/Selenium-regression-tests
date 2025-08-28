@@ -17,7 +17,6 @@ public class LoginTest {
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
-       // options.addArguments("--headless=new");
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
         options.addArguments("--incognito");
@@ -27,7 +26,6 @@ public class LoginTest {
 
     @Test
     public void testLoginPageTitle() {
-
         driver.get("https://example.com");
         String title = driver.getTitle();
         System.out.println(driver.getTitle());
