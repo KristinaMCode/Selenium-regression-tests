@@ -21,6 +21,8 @@ public class LoginTest {
         options.addArguments("--no-sandbox");
         options.addArguments("--incognito");
         options.addArguments("--disable-blink-features=AutomationControlled");
+        options.addArguments("--user-data-dir=/tmp/chrome-profile-" + System.currentTimeMillis());
+
         driver = new ChromeDriver(options);
     }
 
